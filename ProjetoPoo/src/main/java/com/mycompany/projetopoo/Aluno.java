@@ -1,34 +1,25 @@
 
 package com.mycompany.projetopoo;
 
-public class Aluno extends Pessoa {
-    private String identidade;
-    private String cpf;
-    private Pessoa resp;
-
-    public String getIdentidade() {
-        return identidade;
+public class Aluno extends Pessoa{
+    
+    public static int qtde = 0;
+    private String matricula;
+    
+    public Aluno(){
+        Aluno.qtde++;
     }
 
-    public void setIdentidade(String identidade) {
-        this.identidade = identidade;
+    public String getMatricula() {
+        return matricula;
     }
 
-    public String getCpf() {
-        return cpf;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public Pessoa getResp() {
-        return resp;
-    }
-
-    public void setResp(Pessoa resp) {
-        this.resp = resp;
-    }
+    
+    
+    
     
     
 }
