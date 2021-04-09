@@ -6,10 +6,11 @@
 package com.mycompany.projetopoo.app;
 
 
+import com.mycompany.projetopoo.Aluno;
 import java.util.Scanner;
 
 public class App {
-    
+  
     public static void menu(){
         System.out.println("\tCadastro de clientes");
         System.out.println("1 - CADASTRA ALUNO");
@@ -27,6 +28,7 @@ public class App {
     public static void main(String[] args) {
         int opcao;
         Scanner entrada = new Scanner(System.in);
+       
         
         CadastraTurma cadTurma;
         cadTurma = new CadastraTurma();
@@ -67,7 +69,7 @@ public class App {
                 break;
                 
             case 4:
-                listAluno.Laluno();
+               listAluno.Laluno(alunos);
                 break;
                 
             case 5:
@@ -91,8 +93,8 @@ public class App {
 
 
 
-/*
 
+/*
  public static void main(String[] args){
         Aluno[] alunos = new Aluno[10];
         int opcao = 7;

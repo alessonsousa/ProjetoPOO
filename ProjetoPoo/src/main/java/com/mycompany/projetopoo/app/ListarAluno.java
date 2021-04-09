@@ -1,11 +1,21 @@
 package com.mycompany.projetopoo.app;
 
+import com.mycompany.projetopoo.Aluno;
+
 public class ListarAluno {
     
-    public void Laluno() {
+    public void Laluno(Aluno[] alunos) {
         
- 
-        System.out.println("Lista de alunos vazia!!");
+        
+        
+        for (int i = 0; i <  Aluno.qtde; i++) {
+            System.out.println("Lista dos alunos\n" + "Nome: " + alunos[i].getNome()+
+                            "Matricula: " + alunos[i].getMatricula());
+        }
+         
+        
     }
+        
+       
     
 }
