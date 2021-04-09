@@ -1,5 +1,5 @@
 
-package Classes;
+package com.mycompany.projetopoo;
 
 public class Docente extends Pessoa{
     private String id_profissional;

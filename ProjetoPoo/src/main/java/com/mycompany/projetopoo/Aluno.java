@@ -1,5 +1,5 @@
 
-package Classes;
+package com.mycompany.projetopoo;
 
 public class Aluno extends Pessoa {
     private String identidade;

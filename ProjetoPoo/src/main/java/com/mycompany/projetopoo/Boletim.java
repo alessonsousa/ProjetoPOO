@@ -1,5 +1,5 @@
 
-package Classes;
+package com.mycompany.projetopoo;
 
 public class Boletim {
     private int id;

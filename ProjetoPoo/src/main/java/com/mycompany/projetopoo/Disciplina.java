@@ -1,6 +1,5 @@
 
-package Classes;
-
+package com.mycompany.projetopoo;
 public class Disciplina {
     private String nome;
     private String descricao;
