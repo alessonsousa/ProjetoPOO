@@ -6,7 +6,6 @@
 package com.mycompany.projetopoo.app;
 
 
-import com.mycompany.projetopoo.Aluno;
 import java.util.Scanner;
 
 public class App {
@@ -36,8 +35,8 @@ public class App {
         CadastraAluno cadAluno;
         cadAluno = new CadastraAluno();
         
-        ListarAluno listAluno;
-        listAluno = new ListarAluno();
+       ListarAluno listAluno;
+       listAluno = new ListarAluno();
         
         ListarTurma listTurma;
         listTurma = new ListarTurma();
@@ -69,7 +68,7 @@ public class App {
                 break;
                 
             case 4:
-               listAluno.Laluno(alunos);
+               //listAluno.Laluno(alunos);
                 break;
                 
             case 5:
@@ -92,9 +91,9 @@ public class App {
 
 
 
-
-
 /*
+
+
  public static void main(String[] args){
         Aluno[] alunos = new Aluno[10];
         int opcao = 7;
