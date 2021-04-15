@@ -3,6 +3,10 @@ package com.mycompany.projetopoo.app;
 
 import com.mycompany.projetopoo.Aluno;
 import com.mycompany.projetopoo.controle.AlunoControle;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -21,8 +25,19 @@ public class CadastraAluno {
                 String matricula = ler.nextLine();
                 
                 Aluno a = AlunoControle.cadastrarAluno(nome, matricula);
-                alunos.add(a);
-                
+                    alunos.add(a);
+      
+                try {
+               Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/MariaPeixoto", "root", "2010");
+                    ResultSet rs = null;
+                    PreparedStatement stmt =  con.prepareStatement("select nome, matricula from Aluno");
+                    stmt.executeQuery();
+                    while (rs.next()) {
+                        System.out.println("OK");                        
+                    }
+        } catch (Exception e) {
+        }
+             
 
         
        
